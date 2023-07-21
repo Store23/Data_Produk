@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- MY CSS -->
+    <style>
+      html body {
+        background-color: #000000;
+        background-size: 10px;
+        background-attachment: scroll;
+      }
+
+      .jumbotron {
+        background-color: #010207;
+      }
+
+      #myAlbums {
+        background-color: #11142c;
+      }
+      .album {
+        /* padding: 30px; */
+        color: rgb(0, 0, 0);
+      }
+
+      
+
+      .contact form {
+        background-color: beige;
+      }
+
+      .modal {
+        color: #f1f1f1;
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(27, 27, 27); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+
+      .container {
+
+        padding-top: 20%;
+        background-color: #000000;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #000000;
+        width: 100%; /* Could be more or less, depending on screen size */
+      }
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 5%;
+        color: #fbfbfb;
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      </style>
+
+<link rel="stylesheet" href="portfolio.css" />
+
+<title>Penambahan Produk</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  
+  
+  <!-- CONTAINT ATAS -->
+  
+  <div class="jumbotron text-center">
+    <img src="IMG_20230717_101016.png" alt="D-Plus" width="300" style="border-radius: 100%" />
+    <h1 class="display-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 30px; color: rgb(199, 151, 54)"><b>Tambah Produk!</b></h1>
+    <p class="lead" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 15px; color: rgb(149, 168, 185)">
+      pastikan anda sudah menyiapkan data-data produk.
+    </p>
+    <br>
+    <Div style="padding: 30px;">
+    <buytton type="submit" style="width: 100%;padding: 30px;" class="btn btn-warning btn-kirim" onclick="document.getElementById('id01').style.display='block'" style="width: auto"><b>Clik Disini !</b></button>
+    </Div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+        fill="#ff8400"
+        fill-opacity="1"
+        d="M0,64L40,90.7C80,117,160,171,240,170.7C320,171,400,117,480,96C560,75,640,85,720,101.3C800,117,880,139,960,138.7C1040,139,1120,117,1200,106.7C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg> -->
+    </div>
+    
+    <div id="id01" class="modal">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00e1ff" fill-opacity="1" d="M0,256L24,245.3C48,235,96,213,144,186.7C192,160,240,128,288,106.7C336,85,384,75,432,69.3C480,64,528,64,576,90.7C624,117,672,171,720,176C768,181,816,139,864,144C912,149,960,203,1008,234.7C1056,267,1104,277,1152,256C1200,235,1248,181,1296,160C1344,139,1392,149,1416,154.7L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg> -->
+      
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2 style="color: white"><b>Tambahkan !</b></h2>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center; color: aliceblue">
+          <div class="col-md-8">
+            <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+              <strong>Terima Kasih</strong> Anda telah menambah kan produk!
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            
+            <div class="imgcontainer">
+              <img src="Persegi Panjang Besar (IAB) Rosmarin Elegan.png" alt="" style="padding: 30px;">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <form name="submit-to-google-sheet">
+              <!-- <div class="mb-3">
+                <label for="nama" class="form-label">Nama Toko :</label>
+                <input type="text" class="form-control" id="nama" aria-describedby="name" name="Nama_Toko" required />
+              </div>
+               -->
+              <div class="mb-3">
+                <label for="nama" class="form-label">SKU :</label>
+                <input type="text" class="form-control" id="nama" aria-describedby="name" name="SKU" required />
+              </div>
+              
+              <!-- <div class="mb-3">
+                <label for="email" class="form-label">Jenis Produk :</label>
+                <input type="text" class="form-control" id="email" aria-describedby="email" name="Jenis_Produk" required />
+                <ul>
+                  <li style="font-size: small"></li>
+                </ul>
+              </div> -->
+<!--               
+              <div class="mb-3">
+                <label for="password" class="form-label">Ukuran Produk :</label>
+                <input type="text" class="form-control" id="password" aria-describedby="password" name="Ukuran_Produk" />
+                <ul>
+                  <li style="font-size: small">jika tidak ada isi dengan tanda strip (-)</li>
+                </ul>
+              </div>
+               -->
+              <!-- <div>
+                <label for="floatingInputValue">Warna Produk :</label>
+                <input type="text" class="form-control" id="floatingInputValue" value="" name="Warna_Produk" />
+                <ul>
+                  <li style="font-size: small">jika tidak ada isi dengan tanda strip (-)</li>
+                </ul>
+              </div> -->
+              
+              <!-- <div class="mb-3">
+                <label for="text" class="form-label">Berat Produk :</label>
+                <input type="text" class="form-control" id="text" aria-describedby="text" name="Berat_Produk" />
+                <ul>
+                  <li style="font-size: small">jika tidak ada isi dengan tanda strip (-)</li>
+                </ul>
+              </div>
+              
+              <div class="mb-3">
+                <label for="text" class="form-label">Metode Pengiriman :</label>
+                <input type="text" class="form-control" id="text" aria-describedby="text" name="Metode_Pengiriman" required />
+                <ul>
+                  <li style="font-size: small"></li>
+                </ul>
+              </div>
+              
+              <div class="mb-3">
+                <label for="text" class="form-label">Metode Pembayaran :</label>
+                <input type="text" class="form-control" id="text" aria-describedby="text" name="Metode_Pembayaran" required />
+                <ul>
+                  <li style="font-size: small"></li>
+                </ul>
+              </div> -->
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Harga Produk :</label>
+                <input type="number" class="form-control" id="email" aria-describedby="email" name="Harga_Produk" required />
+                <ul>
+                  <li style="font-size: small"></li>
+                </ul>
+              </div>
+              <br />
+              
+              <button type="submit" style="width: 100%" class="btn btn-warning btn-kirim" onclick="myFunction()"><b>Tambah</b></button>
+              
+              <button class="btn btn-warning btn-mengirim d-none" style="width: 100%" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Menambah..
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script>
+      function myFunction() {
+        confirm("Yakin datanya sudah betul Sayangggg?") == true;
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw9GaSg0QB9P4y2lLZyveHHs3uumfuZ7Sy9cE5EpYAsVWeFVjKB3-x8rvvyWGf2cmFm/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnkirim = document.querySelector(".btn-kirim");
+      const btnloading = document.querySelector(".btn-mengirim");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnloading.classList.toggle("d-none");
+        btnkirim.classList.toggle("d-none");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnloading.classList.toggle("d-none");
+            btnkirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
+    
