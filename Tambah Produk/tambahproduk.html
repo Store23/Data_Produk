@@ -51,7 +51,7 @@
 
       .container {
 
-        padding-top: 20%;
+        /* padding-top: 20%; */
         background-color: #000000;
         margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #000000;
@@ -60,7 +60,7 @@
       .close {
         position: absolute;
         right: 25px;
-        top: 5%;
+        top: 1%;
         color: #fbfbfb;
         font-size: 50px;
         font-weight: bold;
@@ -114,7 +114,7 @@
             </div>
             
             <div class="imgcontainer">
-              <img src="Persegi Panjang Besar (IAB) Rosmarin Elegan.png" alt="" style="padding: 30px;">
+              <img src="Persegi Panjang Besar (IAB) Rosmarin Elegan.png" alt="" style="width: 100%; padding-bottom: 20px; border-radius: 10%;" >
               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             </div>
             <form name="submit-to-google-sheet">
@@ -124,7 +124,7 @@
               </div>
                -->
               <div class="mb-3">
-                <label for="nama" class="form-label">SKU :</label>
+                <label for="nama" class="form-label"><b>SKU :</b></label>
                 <input type="text" class="form-control" id="nama" aria-describedby="name" name="SKU" required />
               </div>
               
@@ -177,17 +177,17 @@
               </div> -->
               
               <div class="mb-3">
-                <label for="email" class="form-label">Harga Produk :</label>
-                <input type="number" class="form-control" id="email" aria-describedby="email" name="Harga_Produk" required />
+                <label for="email" class="form-label"><b>Harga Produk :</b></label>
+                <input type="number" class="form-control" value="Rp." id="email" aria-describedby="email" name="Harga_Produk" required />
                 <ul>
                   <li style="font-size: small"></li>
                 </ul>
               </div>
               <br />
               
-              <button type="submit" style="width: 100%" class="btn btn-warning btn-kirim" onclick="myFunction()"><b>Tambah</b></button>
+              <button type="submit" style="width: 100%; height: 60px;" class="btn btn-warning btn-kirim" onclick="myFunction()"><b>Tambah</b></button>
               
-              <button class="btn btn-warning btn-mengirim d-none" style="width: 100%" type="button" disabled>
+              <button class="btn btn-warning btn-mengirim d-none" style="width: 100%;  height: 60px;" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Menambah..
               </button>
